@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD Application</h1> 
+        <div class="input-section">
+            <h2>Create New Item</h2>
+            <label for="newItem">Item Name:</label>
+            <input type="text" id="newItem" placeholder="Enter item name">
+            <button id="createBtn">Create</button>
+        </div>
+
+        <div class="read-section">
+            <h2>Existing Items</h2>
+            <ul id="itemList">
+            </ul>
+
+        </div>
+
+        <div class="update-section" style="display: none;">
+            <h2>Update Item</h2>
+            <label for="updateId">Item ID:</label>
+            <input type="text" id="updateId" readonly>
+            <label for="updateName">New Name:</label>
+            <input type="text" id="updateName" placeholder="Enter new name">
+            <button id="updateBtn">Update</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
